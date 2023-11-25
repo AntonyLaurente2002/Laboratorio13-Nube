@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro Exitoso</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #00b09b, #96c93d); /* Utiliza el mismo gradiente que en el dashboard */
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            margin-bottom: 1em;
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+            color: #333; /* Texto oscuro para mayor contraste */
+            display: inline-block;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #00b09b; /* Cambia el color del botón a verde */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-transform: uppercase;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #96c93d; /* Cambia el color al pasar el ratón a un tono más claro de verde */
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro Exitoso</h1>
+    <p><%= message %></p>
+    <button onclick="location.href='/users/login'">Regresar al login</button>
+</body>
+</html>
